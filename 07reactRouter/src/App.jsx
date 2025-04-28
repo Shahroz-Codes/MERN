@@ -8,8 +8,9 @@ function App() {
 
   return (
     <>
+
     <h1
-    className='bg-black text-white text-center font-bold p-4'
+    className='bg-black text-white text-center text-3xl font-bold p-4'
     >Shahroz-Codes</h1>
        </>
   )
