@@ -5,8 +5,9 @@ const { connectToMongoDB } = require('./DBconnection')
 const app = express()
 const PORT = 8000
 
-connectToMongoDB('mongodb://127.0.0.1:27017').then(() => { console.log("DB conected") });
+connectToMongoDB('mongodb://127.0.0.1:27017/short-url').then(() =>console.log("DB conected"));
 
+app.use(express.json())
 
 
 app.use('/url', urlRoute)
